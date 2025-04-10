@@ -46,9 +46,22 @@ class TestCalculator(unittest.TestCase):
             logarithm(-5, 2)
     
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self): # 3 assertions
+        self.assertAlmostEqual(hypotenuse(3, 4), 5)
+        self.assertAlmostEqual(ypotenuse(5, 12), 13)
+        self.assertAlmostEqual(8, 15), 17)
 
+    def test_sqrt(self): # 3 assertions
+        self.assertAlmostEqual(square_root(4), 2)
+        aelf.assertAlmostEqual(square_root(9), 3)
+        with self.assertRaises(ValueError):
+            square_root(-1)
+
+    ##########################
+
+# Do not touch this
+if __name__ == "__main__":
+    unittest.main()
     # def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
