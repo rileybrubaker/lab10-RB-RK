@@ -1,3 +1,6 @@
+#
+#partner 1: Riley Brubaker
+#partner 2: Rachel Kofman
 import unittest
 from calculator import *
 
