@@ -7,14 +7,14 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
      def test_add(self): # 3 assertions
-         self.assertEqual(add(2, 3),5)
+         self.assertEqual(add(2, 3), 5)
          self.assertEqual(add(-1, 1), 0)
          self.assertEqual(add(0,0),0)
 
      def test_subtract(self): # 3 assertions
          self.assertEqual(subtract(5,3),2)
          self.assertEqual(subtract(0,-3),-3)
-         self.asserEqual(subtract(-2,-2),0)
+         self.assertEqual(subtract(-2,-2),0)
          
 
     ######## Partner 1
@@ -31,7 +31,7 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 2
     def test_divide_by_zero(self):
-        with self.assrtRaises(ZeroDivisionError):
+        with self.assertRaises(ZeroDivisionError):
             div(5,0)
 
      def test_logarithm(self):
@@ -56,7 +56,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_hypotenuse(self): # 3 assertions
         self.assertAlmostEqual(hypotenuse(3, 4), 5)
-        self.assertAlmostEqual(ypotenuse(5, 12), 13)
+        self.assertAlmostEqual(hypotenuse(5, 12), 13)
         self.assertAlmostEqual(8, 15), 17)
 
     def test_sqrt(self): # 3 assertions
@@ -67,16 +67,6 @@ class TestCalculator(unittest.TestCase):
 
     ##########################
 
-# Do not touch this
-if __name__ == "__main__":
-    unittest.main()
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
-    ##########################
 
 # Do not touch this
 if __name__ == "__main__":
