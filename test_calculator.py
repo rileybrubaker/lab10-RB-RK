@@ -20,7 +20,7 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_multiply(self): # 3 assertions
         self.assertEqual(multiply(2, 3), 6)
-        self.assertEqual(multiply(-1, 4,) -4)
+        self.assertEqual(multiply(-1, 4), -4)
         self.assertEqual(multiply(0, 10), 0)
 
     def test_divide(self): # 3 assertions
@@ -32,7 +32,7 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 2
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
-            div(5,0)
+            divide(5,0)
 
      def test_logarithm(self):
          self.assertAlmostEqual(logarithm(100,10),2)
@@ -41,7 +41,7 @@ class TestCalculator(unittest.TestCase):
   
 
     def test_log_invalid_base(self):
-        with self.assertRaises(ValuError):
+        with self.assertRaises(ValueError):
             logarithm(10,-2)
         with self.assertRaises(ValueError):
             logarithm(10,1)
@@ -57,11 +57,11 @@ class TestCalculator(unittest.TestCase):
     def test_hypotenuse(self): # 3 assertions
         self.assertAlmostEqual(hypotenuse(3, 4), 5)
         self.assertAlmostEqual(hypotenuse(5, 12), 13)
-        self.assertAlmostEqual(8, 15), 17)
+        self.assertAlmostEqual(hypotenuse(8, 15), 17)
 
     def test_sqrt(self): # 3 assertions
         self.assertAlmostEqual(square_root(4), 2)
-        aelf.assertAlmostEqual(square_root(9), 3)
+        self.assertAlmostEqual(square_root(9), 3)
         with self.assertRaises(ValueError):
             square_root(-1)
 
