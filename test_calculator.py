@@ -6,12 +6,12 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-     def test_add(self): # 3 assertions
+    def test_add(self): # 3 assertions
          self.assertEqual(add(2, 3), 5)
          self.assertEqual(add(-1, 1), 0)
          self.assertEqual(add(0,0),0)
 
-     def test_subtract(self): # 3 assertions
+    def test_subtract(self): # 3 assertions
          self.assertEqual(subtract(5,3),2)
          self.assertEqual(subtract(0,-3),-3)
          self.assertEqual(subtract(-2,-2),0)
@@ -34,7 +34,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             divide(5,0)
 
-     def test_logarithm(self):
+    def test_logarithm(self):
          self.assertAlmostEqual(logarithm(100,10),2)
          self.assertAlmostEqual(logarithm(8,2),3)
          self.assertAlmostEqual(logarithm(1,10),0)# 3 assertions
