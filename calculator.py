@@ -22,7 +22,7 @@ def divide(a, b):
         raise ZeroDivisionError("Cannot divide by zero")
     return a/b
 
-def logarithm(value, base)"
+def logarithm(value, base):
     if value<=0:
         raise ValueError("Logarithm underfined for non-positive values")
     if base<=0 or base==1:
