@@ -30,7 +30,7 @@ def logarithm(value, base):
         raise ValueError("Logarithm base must be positive and not equal to 1")
     return math.log(value, base)
 
-def exp(x)
+def exp(x):
     return math.exp(x)
 
 def hypotenuse(a, b):
