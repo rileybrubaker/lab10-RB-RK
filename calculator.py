@@ -7,7 +7,8 @@ calculator.py
 
 One function per operation, in order.
 """
-# First example
+import math
+
 def add(a, b): 
     return a +b
 
@@ -29,8 +30,11 @@ def logarithm(value, base):
         raise ValueError("Logarithm base must be positive and not equal to 1")
     return math.log(value, base)
 
+def exp(x)
+    return math.exp(x)
+
 def hypotenuse(a, b):
-    return math.sqrt(a**2 +b**2)
+    return math.sqrt(a**2 + b**2)
 
 def square_root(x):
     if x<0:
